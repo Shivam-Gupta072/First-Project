@@ -1,0 +1,336 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Overpass", sans-serif;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.4),rgba(4,9,30,0.4)),url(picture/banner.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+nav{
+    display: flex;
+padding: 2% 6%;    
+    justify-content: space-between;
+    align-items: center;
+   
+}
+nav img{
+    width: 200px;
+    position: absolute;
+}
+.nav-link{
+    flex: 1;
+    text-align: right;
+}
+.nav-link ul li{
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-link ul li a{
+    color: white;
+    text-decoration: none;
+}
+.nav-link ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background-color: gold;
+ display: block;
+ margin: auto;
+ transition: 0.5s;
+}
+.nav-link ul li:hover::after{
+width: 100%;
+}
+
+.text-box{
+    width: 90%;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);  
+    /* it do text in the center */
+    text-align: center;
+
+}
+h1{
+    font-size: 60px;
+}
+.text-box p{
+    margin: 10px 0 40px;
+}
+
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    position: relative;
+
+}
+.hero-btn:hover{
+    background: orange;
+transition: 0.7s;
+}
+
+nav #close{
+    display: none;
+}
+nav #menu{
+    display: none;
+}
+
+@media (max-width:700px){
+     .text-box h1{
+        font-size: 20px;
+    }
+    .nav-link ul li{
+        display: block;
+    padding: 20px;
+   
+    font-size: 20px;
+    }
+    .nav-link{
+        position: relative;
+        background: orange;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: 0;
+        text-align: left;
+        z-index: 2;
+        transform: translate(400px,-10px);
+    transition: 1s;
+    }
+.logo{
+    top: 15px;
+    left: 15px;
+}    
+nav #close{
+    display: block;
+    color: #fff;
+    margin: 10px;
+    font-size: 23px;
+
+transition: 1s;}
+nav #menu{
+    display: block;
+    color: #fff;
+    margin: 10px;
+    font-size: 23px;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    transition: 1s;
+}
+.row{
+    flex-direction: column;
+}
+
+}
+
+.course {
+ width: 80%;
+ margin: auto;
+ text-align: center;
+ padding-top: 100px;
+}
+h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+p{
+    padding: 10px;
+    line-height: 20px;
+}
+.row{
+display: flex;
+margin-top: 5%;
+justify-content: space-between;
+}
+.course-col{
+    flex-basis: 31%;
+    background-color:#ffc8dd;
+    padding:20px 12px;
+    margin-bottom: 5%;
+box-sizing: border-box;
+border-radius: 10px;
+transition: 0.5s;
+}
+.course-col:hover{
+    box-shadow: 0 0 20px 0px rgba(4,9,30,0.4);
+}
+.campus{
+    width: 80%;
+    margin: auto;
+    padding-top: 50px;
+   text-align: center;
+
+}
+.campus-cont{
+    width: 80%;
+    margin: auto;
+    padding-top:30px;
+    text-align: center;
+    display: flex; 
+    justify-content: space-between;
+
+    gap: 20px;
+}
+.campus-cont-col {
+  height: 350px ;
+  flex-basis: 31%;
+position: relative;  
+  width: 200px;
+  text-align: center;
+  justify-content: center;
+ 
+/* margin: 20px; */
+}
+.campus-cont-col img{
+    width: 100%;
+    height: 100%;
+display: block;
+border-radius: 10px;
+
+}
+.layer{
+    background: transparent;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    top: 0;
+    left: 0;
+  /* transform: translate(-50%,-50%);  */
+}
+
+.layer:hover{
+    background: rgba(136, 122, 122, 0.5);
+}
+.layer h4{
+    width: 100%;
+    color: #fff;
+    font-weight: 150;
+    font-size: 26px;
+     bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+opacity: 0;
+transition: 0.4s;
+}
+.layer:hover h4{
+  bottom: 50%;
+    opacity: 1;
+}
+
+@media (max-width:700px){
+    .campus-cont{
+        display: flex;
+        display: block;
+        width: 80%;
+        justify-content: center;
+        align-items: center;
+    }
+ .campus-cont-col{
+    flex-wrap: wrap;
+    flex-basis: 100%;
+    margin: 40px 30px;
+    width: 100%;
+ }
+}
+.facilities{
+    width: 80%;
+    margin: auto;
+    padding-top:50px ;
+    text-align: center;
+}
+.facilities-col{
+    flex-basis: 31%;
+    margin-bottom: 5%;
+    text-align: left;
+
+}
+.facilities-col img{
+    width:100%;
+}
+.facilities-col h3{
+    margin: 10px 5px;
+    text-align: left;
+}
+/* testimonials */
+.testimonials{
+    width: 80%;
+    margin: auto;
+    padding-top: 100px;
+text-align: center;
+}
+.testimonials-col{
+    flex-basis: 44%;
+    background: lightblue;
+text-align:left;
+display: flex;
+padding: 20px;
+border-radius: 10px;
+margin-bottom: 20px;
+}
+.testimonials-col img{
+    height: 50px;
+    border-radius: 50%;
+}
+.testimonials-col h3{
+ padding-bottom: 10px;
+}
+.testimonials-col .ri-star-fill{
+    color: blue;
+}
+.testimonials-col .ri-star-line{
+    color: blue;
+}
+.testimonials-col .ri-star-half-line{
+    color: blue;
+}
+.cta{
+    width: 80%;
+    margin: 100px auto;
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(picture/education.png);
+    background-size: cover;
+    height:170px;
+    background-position: center;
+  text-align: center;
+  padding: 100px 0;
+border-radius: 10px;
+}
+.cta h1{
+    padding-bottom: 30px;
+color: white;
+}
+@media (max-width:700px){
+     .cta h1{
+       font-size: 25px;
+    }
+.footer{
+    font-size: 16px;
+}
+}
+.footer{
+    width:100% auto;
+    text-align: center;
+    font-weight: 300;
+}
+/* .footer .icon{
+    padding: 10px 50px;
+} */
