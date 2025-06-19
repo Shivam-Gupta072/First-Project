@@ -1,20 +1,22 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: "Overpass", sans-serif;
+font-family: "Roboto Condensed", sans-serif;
 }
 
 
-@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 .header{
     min-height: 100vh;
     width: 100%;
-    background-image: linear-gradient(rgba(4,9,30,0.4),rgba(4,9,30,0.4)),url(picture/banner.jpg);
+    background-image: linear-gradient(rgba(131, 128, 117, 0.8),rgba(236, 231, 213, 0.8)),url(picture/banner.jpg);
     background-position: center;
     background-size: cover;
     position: relative;
+}
+body{
+    overflow: hidden;
 }
 nav{
     display: flex;
@@ -93,7 +95,8 @@ nav #menu{
 }
 
 @media (max-width:700px){
-     .text-box h1{
+   
+    .text-box h1{
         font-size: 20px;
     }
     .nav-link ul li{
@@ -113,7 +116,8 @@ nav #menu{
         z-index: 2;
         transform: translate(400px,-10px);
     transition: 1s;
-    }
+    overflow: hidden;   
+}
 .logo{
     top: 15px;
     left: 15px;
@@ -123,7 +127,7 @@ nav #close{
     color: #fff;
     margin: 10px;
     font-size: 23px;
-
+overflow: hidden;
 transition: 1s;}
 nav #menu{
     display: block;
@@ -334,3 +338,4 @@ color: white;
 /* .footer .icon{
     padding: 10px 50px;
 } */
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
